@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Signika", sans-serif;
+    font-size: 20px;
+
+
+}
+
+body {
+    background-color: rgb(125, 169, 130);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Navegacion*/
+
+.navbar-brand img {
+    height: 90px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+
+.bg-violeta {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.nav-item a {
+    color: rgb(0, 0, 0);
+
+}
+
+.nav-item a:hover {
+    color: rgb(202, 92, 151);
+    transform: scale(1.03)
+}
+
+.act {
+    color: aqua;
+}
+
+/*Galeria index*/
+
+.gallery {
+    display: flex;
+    width: 100vw;
+    height: 430px;
+
+}
+
+.gallery img {
+    width: 10px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.gallery img:hover {
+    cursor: all-scroll;
+    width: 300px;
+    opacity: 1;
+}
+
+/* Slider auto*/
+.slider-box {
+    display: none;
+}
+
+/*Banner index*/
+
+.banner {
+    background-color: #fbf5e0;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/burbujas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.h1 {
+    font-size: 90px;
+    font-family: Yellowtail, Signika, sans-serif;
+    font-weight: 500;
+
+}
+
+.p1 {
+    font-size: 60px;
+    font-style: oblique;
+    font-weight: 600;
+
+
+}
+
+
+/*Cards index*/
+
+
+.serv {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    width: 100vw;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
+.card {
+    min-width: 16rem;
+    transition: all 0.25s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 00.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.cbtn {
+    background-color: #000000;
+    border-radius: 25px;
+    border-style: none;
+    height: 50px;
+
+}
+
+.cbtn:hover {
+    background-color: rgb(202, 92, 151);
+}
+
+.cbtn a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    height: 50px;
+}
+
+.cbtn a:hover {
+    color: #ffffff;
+}
+
+.card-title {
+    font-size: 30px;
+}
+
+.card-body {
+    background: rgb(243, 210, 238);
+    background: radial-gradient(circle, rgba(243, 210, 238, 1) 0%, rgba(244, 232, 242, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background-image: url(./images/caqui.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-footer {
+    background: rgb(243, 240, 231);
+    background: linear-gradient(180deg, rgba(243, 240, 231, 1) 0%, rgba(243, 240, 231, 1) 14%, rgba(255, 255, 255, 1) 100%);
+}
+
+/*Pie de pagina*/
+
+.pie-pagina {
+    display: grid;
+    width: 100vw;
+    background-color: rgb(12, 12, 12);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo siguenos citas"
+        "copyri copyri copyri"
+    ;
+}
+
+.footer-logo {
+    grid-area: logo;
+    align-content: center;
+}
+
+.footer-logo img {
+    width: 250px;
+    transition: all 0.25s;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+}
+
+.siguenos {
+    grid-area: siguenos;
+    align-content: center;
+}
+
+.siguenos-siguenos {
+    color: rgb(173, 139, 1);
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.siguenos-redes {
+
+    display: flex;
+    grid-area: a;
+    align-content: center;
+    justify-content: center;
+}
+
+.siguenos-redes a {
+    color: #e8e8e8;
+    transition: all 0.25s;
+}
+
+.siguenos-redes a:hover {
+    transform: scale(1.2);
+}
+
+.citas {
+    grid-area: citas;
+    align-content: center;
+}
+
+.citas-citas {
+    color: rgb(173, 139, 1);
+    padding-top: 30px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.citas-telefono {
+    color: #e8e8e8;
+    display: flex;
+    grid-area: telefono;
+    justify-content: center;
+    align-items: center;
+}
+
+.citas-telefono a {
+    color: #11c50b;
+    transition: all 0.25s;
+}
+
+.citas-telefono a:hover {
+    transform: scale(1.2);
+}
+
+.siguenos-telefono .numero {
+    color: #e8e8e8;
+    align-content: center;
+}
+
+.copyright {
+    grid-area: copyri;
+    background-color: chocolate;
+    background: rgb(235,191,219);
+    background: radial-gradient(circle, rgba(235,191,219,1) 0%, rgba(218,118,212,1) 50%, rgba(193,70,143,1) 100%);
+    text-align: center;
+}
+
+/*Seccion: Paginas*/
+
+/*Ficha*/
+
+.ficha {
+    display: grid;
+    width: 99%;
+    background-color: #ffffff;
+    background-color: #e8e8e8;
+    background-image: url(./images/burbujas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(400px, 1fr) 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "titulo titulo"
+        "foto subtitulo-1"
+        "foto texto-1"
+        "foto subtitulo-2"
+        "foto texto-2"
+        "banner subtitulo-3"
+        "banner texto-3"
+        "banner boton"
+    ;
+
+}
+
+.imagen {
+    align-content: center;
+
+}
+
+.imagen img {
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+@media (width<900px) {
+    .ficha {
+
+        grid-template-columns: 1fr 3fr;
+
+
+    }
+}
+
+@media (width<900px) {
+    .ficha {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "banner"
+            "foto"
+            "titulo"
+            "subtitulo-1"
+            "texto-1"
+            "subtitulo-2"
+            "texto-2"
+            "subtitulo-3"
+            "texto-3"
+            "boton"
+    }
+
+    .imagen {
+        justify-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (width<700px) {
+    .ficha {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "banner"
+            "foto"
+            "titulo"
+            "subtitulo-1"
+            "texto-1"
+            "subtitulo-2"
+            "texto-2"
+            "subtitulo-3"
+            "texto-3"
+            "boton"
+    }
+
+    .imagen {
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    .imagen img {
+        width: 400px;
+        height: 550px;
+        padding: 20px;
+        border-radius: 50px;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .btn button {
+        width: 18rem;
+    }
+
+    .pie-pagina {
+        display: grid;
+        width: 100%;
+        background-color: rgb(12, 12, 12);
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "siguenos citas"
+            "copyri copyri"
+        ;
+    }
+
+}
+
+
+
+
+.fichad img {
+    object-fit: cover;
+    width: 400px;
+    height: 650px;
+    padding: 20px;
+    border-radius: 50px;
+    justify-items: center;
+    align-content: center;
+}
+
+.ficha h2 {
+    background-color: rgb(0, 0, 0);
+    background: rgb(237, 231, 183);
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: rgb(185, 162, 67);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.ficha h3 {
+    font-size: 25px;
+    color: rgb(207, 120, 91);
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.ficha p {
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 25px;
+}
+
+a {
+    font-size: 25px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-area {
+    text-align: center;
+}
+
+.btn button {
+    font-weight: 700;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+
+.btn button:hover {
+    background-color: rgb(202, 92, 151);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.ficha .imagen {
+
+    grid-area: foto;
+}
+
+.ficha .titulo {
+
+    grid-area: titulo;
+}
+
+.ficha-banner {
+    grid-area: banner;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ficha .subtitulo-1 {
+
+    grid-area: subtitulo-1;
+}
+
+.ficha .subtitulo-2 {
+
+    grid-area: subtitulo-2;
+}
+
+.ficha .subtitulo-3 {
+
+    grid-area: subtitulo-3;
+}
+
+.ficha .texto-1 {
+
+    grid-area: texto-1;
+}
+
+.ficha .texto-2 {
+
+    grid-area: texto-2;
+}
+
+.ficha .texto-3 {
+
+    grid-area: texto-3;
+}
+
+a {
+
+    grid-area: boton;
+}
+
+
+/* gallery pages*/
+
+.gallery-social {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    position: relative;
+    background-color: #e8e8e8;
+    background-image: url(./images/burbujas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-title {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.gallery-title h2 {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(185, 162, 67);
+
+
+}
+
+.gallery-social img {
+    width: 0px;
+    height: 400px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border-radius: 10px;
+
+}
+
+.gallery-social img:hover {
+    cursor: all-scroll;
+    width: 500px;
+    height: 600px;
+    opacity: 1;
+}
+
+/*contacto*/
+
+.ficha-contacto {
+    height: 100%;
+    width: 100vw;
+    padding: 40px;
+    background-image: url(./images/artistico3.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.card-contacto {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px 90px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: rgb(196, 196, 196);
+    background-color: #e8e8e8;
+    background-image: url(./images/burbujas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+}
+
+
+.card-contacto h1 {
+    font-size: 60px;
+    color: rgb(6, 6, 6);
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+
+
+}
+
+.card-contacto h2 {
+    font-size: 40px;
+    color: rgb(173, 139, 1);
+    padding: 10px;
+}
+
+.card-contacto p {
+    color: #000000;
+    font-size: 25px;
+}
+
+.card-contacto ul {
+    padding-left: 30px;
+    list-style: square;
+    color: rgb(0, 0, 0);
+
+}
+
+.card-contacto li {
+    color: #000000;
+    font-size: 25px;
+    list-style: none;
+    padding: 10px;
+}
+
+.card-contacto button {
+    height: 50%;
+    width: 230px;
+    align-items: center;
+    position: relative;
+    background-color: #25D366;
+    border-radius: 10px;
+}
+
+.card-contacto button:hover {
+    transform: scale(1.02);
+}
+
+.card-contacto img {
+    height: 50px;
+    align-items: center;
+    position: absolute;
+}
+
+.card-contacto input {
+    padding: 5px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    height: 25px;
+    border-radius: 20px;
+}
+
+/*Mobile display*/
+
+@media screen and (max-width:500px) {
+
+    body {
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+    }
+
+    header .nav-links {
+        display: none;
+    }
+
+    /*Gallery*/
+
+    .gallery {
+        display: none;
+    }
+
+    /*Gallery social*/
+
+    .gallery-social {
+        display: none;
+    }
+
+    /*Card index mobile*/
+
+    .cbtn {
+        background-color: #000000;
+        border-radius: 25px;
+        height: 50px;
+        width: 18rem;
+
+    }
+
+    /*Slider automatico*/
+
+    .slider-box {
+        display: flex;
+        width: 100vw;
+        height: 400px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+
+    .slider-box ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite ease-in-out;
+    }
+
+    .slider.box li {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+
+    .slider-box img {
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    @keyframes slide {
+        0% {
+            margin-left: 0;
+        }
+
+        20% {
+            margin-left: 0;
+        }
+
+        25% {
+            margin-left: -100%;
+        }
+
+        40% {
+            margin-left: -100%;
+        }
+
+        50% {
+            margin-left: -200%;
+        }
+
+        70% {
+            margin-left: -200%;
+        }
+
+        75% {
+            margin-left: -300%;
+        }
+
+        100% {
+            margin-left: -300%;
+        }
+    }
+
+    /*Banner index*/
+
+
+    .banner {
+        background-color: rgb(255, 255, 255);
+        height: 300px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .h1 {
+        font-size: 70px;
+        font-family: Yellowtail, Signika, sans-serif;
+        font-weight: 500;
+
+    }
+
+    .p1 {
+        font-size: 50px;
+        font-style: oblique;
+        font-weight: 600;
+
+
+    }
+
+
+    /* pie de página*/
+
+    .pie-pagina {
+        display: grid;
+        width: 100vw;
+        background-color: rgb(12, 12, 12);
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "siguenos citas"
+            "copyri copyri"
+        ;
+    }
+
+    /* contacto mobile*/
+
+    .ficha-contacto {
+        height: 100%;
+        width: 100vw;
+        padding: 20px;
+        background-image: url(images/artistico3.jpg);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+
+
+    }
+
+    .card-contacto {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        background-color: rgb(196, 196, 196);
+        opacity: 90%;
+    }
+
+
+    .card-contacto h1 {
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        display: flex;
+        padding: 10px;
+
+
+    }
+
+    .card-contacto h2 {
+        font-size: 40px;
+        color: rgb(173, 139, 1);
+        padding: 10px;
+    }
+
+    .card-contacto p {
+        color: #000000;
+        font-size: 25px;
+    }
+
+    .card-contacto ul {
+        padding-left: 30px;
+        list-style: square;
+        color: rgb(0, 0, 0);
+
+    }
+
+    .card-contacto li {
+        color: #000000;
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    .card-contacto button {
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        background-color: #25D366;
+        border-radius: 10px;
+    }
+
+    .card-contacto img {
+        height: 50px;
+        width: 70%;
+        align-items: center;
+        position: absolute;
+    }
+
+
+}
