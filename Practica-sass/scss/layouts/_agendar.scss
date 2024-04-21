@@ -1,0 +1,85 @@
+/*contacto*/
+
+.ficha-contacto {
+    height: 100%;
+    width: 100vw;
+    padding: 40px;
+    background-image: url(../images/artistico3.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.card-contacto {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px 90px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: rgb(196, 196, 196);
+    background-color: #e8e8e8;
+    background-image: url(../images/burbujas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+
+    h1 {
+        font-size: 60px;
+        color: rgb(6, 6, 6);
+        justify-content: center;
+        display: flex;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: rgb(173, 139, 1);
+        padding: 10px;
+    }
+
+    p {
+        color: #000000;
+        font-size: 25px;
+    }
+
+    ul {
+        padding-left: 30px;
+        list-style: square;
+        color: rgb(0, 0, 0);
+
+    }
+
+    li {
+        color: #000000;
+        font-size: 25px;
+        list-style: none;
+        padding: 10px;
+    }
+
+    button {
+        height: 50%;
+        width: 230px;
+        align-items: center;
+        position: relative;
+        background-color: #25D366;
+        border-radius: 10px;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    img {
+        height: 50px;
+        align-items: center;
+        position: absolute;
+    }
+
+}

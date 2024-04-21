@@ -1,0 +1,31 @@
+
+/*Navegacion*/
+
+.navbar-brand img {
+    height: 90px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+
+.bg-violeta {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.nav-item a {
+    color: rgb(0, 0, 0);
+
+}
+
+.nav-item a:hover {
+    color: rgb(202, 92, 151);
+    transform: scale(1.03)
+}
+
+.act {
+    color: aqua;
+}

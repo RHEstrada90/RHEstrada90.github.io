@@ -1,0 +1,477 @@
+
+/*Ficha*/
+
+.ficha {
+    display: grid;
+    width: 100vw;
+    background-color: #ffffff;
+    background-color: #e8e8e8;
+    background-image: url(../images/burbujas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: minmax(400px, 1fr) 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "titulo titulo"
+        "foto subtitulo-1"
+        "foto texto-1"
+        "foto subtitulo-2"
+        "foto texto-2"
+        "banner subtitulo-3"
+        "banner texto-3"
+        "banner boton"
+    ;
+
+}
+
+.imagen {
+    align-content: center;
+
+}
+
+.imagen img {
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.fichad img {
+    object-fit: cover;
+    width: 400px;
+    height: 650px;
+    padding: 20px;
+    border-radius: 50px;
+    justify-items: center;
+    align-content: center;
+}
+
+.ficha h2 {
+    background-color: rgb(0, 0, 0);
+    background: rgb(237, 231, 183);
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: rgb(185, 162, 67);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.ficha h3 {
+    font-size: 25px;
+    color: rgb(207, 120, 91);
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.ficha p {
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 25px;
+}
+
+a {
+    font-size: 25px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-area {
+    text-align: center;
+}
+
+.btn button {
+    font-weight: 700;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+
+.btn button:hover {
+    background-color: rgb(202, 92, 151);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.ficha .imagen {
+
+    grid-area: foto;
+}
+
+.ficha .titulo {
+
+    grid-area: titulo;
+}
+
+.ficha-banner {
+    grid-area: banner;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ficha .subtitulo-1 {
+
+    grid-area: subtitulo-1;
+}
+
+.ficha .subtitulo-2 {
+
+    grid-area: subtitulo-2;
+}
+
+.ficha .subtitulo-3 {
+
+    grid-area: subtitulo-3;
+}
+
+.ficha .texto-1 {
+
+    grid-area: texto-1;
+}
+
+.ficha .texto-2 {
+
+    grid-area: texto-2;
+}
+
+.ficha .texto-3 {
+
+    grid-area: texto-3;
+}
+
+a {
+
+    grid-area: boton;
+}
+
+
+/* gallery pages*/
+
+.gallery-social {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    position: relative;
+    background-color: #e8e8e8;
+    background-image: url(../images/burbujas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-title {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(61, 61, 61, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.gallery-title h2 {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(185, 162, 67);
+
+
+}
+
+.gallery-social img {
+    width: 0px;
+    height: 400px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border-radius: 10px;
+
+}
+
+.gallery-social img:hover {
+    cursor: all-scroll;
+    width: 500px;
+    height: 600px;
+    opacity: 1;
+}
+
+@media (width<900px) {
+    .ficha {
+
+        grid-template-columns: 1fr 3fr;
+
+
+    }
+}
+
+@media (width<900px) {
+    .ficha {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "banner"
+            "foto"
+            "titulo"
+            "subtitulo-1"
+            "texto-1"
+            "subtitulo-2"
+            "texto-2"
+            "subtitulo-3"
+            "texto-3"
+            "boton"
+    }
+
+    .imagen {
+        justify-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (width<700px) {
+    .ficha {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "banner"
+            "foto"
+            "titulo"
+            "subtitulo-1"
+            "texto-1"
+            "subtitulo-2"
+            "texto-2"
+            "subtitulo-3"
+            "texto-3"
+            "boton"
+    }
+
+    .imagen {
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    .imagen img {
+        width: 400px;
+        height: 550px;
+        padding: 20px;
+        border-radius: 50px;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .btn button {
+        width: 18rem;
+    }
+
+    .pie-pagina {
+        display: grid;
+        width: 100%;
+        background-color: rgb(12, 12, 12);
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "siguenos citas"
+            "copyri copyri"
+        ;
+    }
+
+}
+
+
+
+
+
+
+
+/*Mobile display*/
+
+@media screen and (max-width:500px) {
+
+    body {
+        width: 100vw;
+        background-color: rgb(0, 0, 0);
+    }
+
+    header .nav-links {
+        display: none;
+    }
+
+    /*Gallery*/
+
+    .gallery {
+        display: none;
+    }
+
+    /*Gallery social*/
+
+    .gallery-social {
+        display: none;
+    }
+
+    /*Card index mobile*/
+
+    .cbtn {
+        background-color: #000000;
+        border-radius: 25px;
+        height: 50px;
+        width: 14rem;
+
+    }
+
+    /*Slider bootstrap*/
+
+    .carousel{
+        display: flex;
+    }
+
+    /*Banner index*/
+
+    .banner {
+        background-color: rgb(255, 255, 255);
+        height: 300px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .h1 {
+        font-size: 70px;
+        font-family: Yellowtail, Signika, sans-serif;
+        font-weight: 500;
+
+    }
+
+    .p1 {
+        font-size: 50px;
+        font-style: oblique;
+        font-weight: 600;
+
+
+    }
+
+
+    /* pie de página*/
+
+    .pie-pagina {
+        display: grid;
+        width: 100vw;
+        background-color: rgb(12, 12, 12);
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "siguenos citas"
+            "copyri copyri"
+        ;
+    }
+
+    /* contacto mobile*/
+
+    .ficha-contacto {
+        height: 100%;
+        width: 100vw;
+        padding: 20px;
+        background-image: url(../images/artistico3.jpg);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+
+
+    }
+
+    .card-contacto {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        background-color: rgb(196, 196, 196);
+        opacity: 90%;
+    }
+
+
+    .card-contacto h1 {
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        display: flex;
+        padding: 10px;
+
+
+    }
+
+    .card-contacto h2 {
+        font-size: 40px;
+        color: rgb(173, 139, 1);
+        padding: 10px;
+    }
+
+    .card-contacto p {
+        color: #000000;
+        font-size: 25px;
+    }
+
+    .card-contacto ul {
+        padding-left: 30px;
+        list-style: square;
+        color: rgb(0, 0, 0);
+
+    }
+
+    .card-contacto li {
+        color: #000000;
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    .card-contacto button {
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        background-color: #25D366;
+        border-radius: 10px;
+    }
+
+    .card-contacto img {
+        height: 50px;
+        width: 70%;
+        align-items: center;
+        position: absolute;
+    }
+
+
+}
+
