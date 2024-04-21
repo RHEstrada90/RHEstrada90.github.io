@@ -6,6 +6,8 @@
     padding: 0;
     font-family: "Signika", sans-serif;
     font-size: 20px;
+    max-width: 100%;
+    max-height: 100%;
 
 
 }
@@ -13,7 +15,7 @@
 body {
     background-color: rgb(125, 169, 130);
     width: 100vw;
-    overflow-x: hidden;
+
 }
 
 /*Navegacion*/
@@ -73,6 +75,17 @@ body {
 /* Slider auto*/
 .slider-box {
     display: none;
+}
+
+/*slide auto bootstrap*/
+
+.carousel {
+    display: none
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
 }
 
 /*Banner index*/
@@ -275,8 +288,8 @@ body {
 .copyright {
     grid-area: copyri;
     background-color: chocolate;
-    background: rgb(235,191,219);
-    background: radial-gradient(circle, rgba(235,191,219,1) 0%, rgba(218,118,212,1) 50%, rgba(193,70,143,1) 100%);
+    background: rgb(235, 191, 219);
+    background: radial-gradient(circle, rgba(235, 191, 219, 1) 0%, rgba(218, 118, 212, 1) 50%, rgba(193, 70, 143, 1) 100%);
     text-align: center;
 }
 
@@ -286,7 +299,7 @@ body {
 
 .ficha {
     display: grid;
-    width: 99%;
+    width: 100vw;
     background-color: #ffffff;
     background-color: #e8e8e8;
     background-image: url(./images/burbujas.gif);
@@ -332,7 +345,7 @@ body {
 @media (width<900px) {
     .ficha {
         display: grid;
-        width: 100%;
+        width: 100vw;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -357,7 +370,7 @@ body {
 @media (width<700px) {
     .ficha {
         display: grid;
-        width: 100%;
+        width: 100vw;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -546,7 +559,7 @@ a {
 
 .gallery-title {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -712,76 +725,17 @@ a {
         background-color: #000000;
         border-radius: 25px;
         height: 50px;
-        width: 18rem;
+        width: 14rem;
 
     }
 
-    /*Slider automatico*/
+    /*Slider bootstrap*/
 
-    .slider-box {
+    .carousel{
         display: flex;
-        width: 100vw;
-        height: 400px;
-        margin: 0px;
-        overflow: hidden;
-    }
-
-
-    .slider-box ul {
-        display: flex;
-        padding: 0;
-        width: 400%;
-        animation: slide 20s infinite ease-in-out;
-    }
-
-    .slider.box li {
-        width: 100%;
-        list-style: none;
-        position: relative;
-    }
-
-    .slider-box img {
-        width: 100vw;
-        height: 400px;
-        object-fit: cover;
-    }
-
-    @keyframes slide {
-        0% {
-            margin-left: 0;
-        }
-
-        20% {
-            margin-left: 0;
-        }
-
-        25% {
-            margin-left: -100%;
-        }
-
-        40% {
-            margin-left: -100%;
-        }
-
-        50% {
-            margin-left: -200%;
-        }
-
-        70% {
-            margin-left: -200%;
-        }
-
-        75% {
-            margin-left: -300%;
-        }
-
-        100% {
-            margin-left: -300%;
-        }
     }
 
     /*Banner index*/
-
 
     .banner {
         background-color: rgb(255, 255, 255);
